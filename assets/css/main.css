@@ -666,7 +666,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -868,68 +868,7 @@ section,
   transform: scale(1.02);
 }
 
-.hero .hero-image .floating-elements {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-}
 
-.hero .hero-image .floating-elements .floating-card {
-  position: absolute;
-  background: var(--surface-color);
-  padding: 15px 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  animation: float 3s ease-in-out infinite;
-}
-
-.hero .hero-image .floating-elements .floating-card i {
-  font-size: 1.5rem;
-  color: var(--accent-color);
-}
-
-.hero .hero-image .floating-elements .floating-card.design {
-  top: 10%;
-  right: -10%;
-  animation-delay: 0s;
-}
-
-.hero .hero-image .floating-elements .floating-card.code {
-  bottom: 30%;
-  left: -15%;
-  animation-delay: 1s;
-}
-
-.hero .hero-image .floating-elements .floating-card.creativity {
-  top: 60%;
-  right: -5%;
-  animation-delay: 2s;
-}
-
-@media (max-width: 992px) {
-  .hero .hero-image .floating-elements .floating-card {
-    display: none;
-  }
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
 
 @media (max-width: 992px) {
   .hero .hero-content {
